@@ -230,11 +230,14 @@ body {
   padding-bottom: 20px;
     padding-top: 40px;
     justify-content: center;
-   
-
+    width: 80%;
+    margin: auto;
+    /* border: 5px solid darkcyan; */
   }
   
-  
+   .search-container .icon{
+    margin-right: 10px;
+  }
   .homeText h1 {
     font-size: 24px;
   }
@@ -249,9 +252,7 @@ body {
   .container{
     height: auto;
   }
-  .homeContent .btns {
-    flex-direction: column;
-  }
+  
   .homeImg .imgContainer {
    background-size: 250%;
    align-items: flex-start;
@@ -266,6 +267,11 @@ body {
    max-width:450px;
   
   }
+  .homeContent{
+    justify-content: center;
+    align-items: center;
+   
+  }
   .homeContent .btns {
     flex-direction: column;
   align-items: center;
@@ -278,11 +284,12 @@ body {
    
   }
   .search-container {
-    width: 70%;
+    width: 60%;
   }
   .homeContent{
     align-items: flex-start;
   }
+  
   
   .search-container .icon{
     margin-right: 10px;
@@ -432,7 +439,7 @@ body {
       }
       
       .animation-container .effect {
-        width: 8px; /* حجم النقاط */
+        width: 8px; 
         height: 8px;
         background-color: #7b4efb;
         border-radius: 50%;
@@ -461,7 +468,7 @@ body {
   }
   .animation-container{
    right: 5%;
-   top: 40%;
+   top: 50%;
   }
 }
 @media (max-width: 991px) {
