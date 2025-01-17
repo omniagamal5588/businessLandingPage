@@ -1,28 +1,28 @@
 const container = document.querySelector('.animation-container');
 
-const pointSize = 20; // حجم النقاط
-const spacing = 18; // المسافة بين النقاط
-const thickness = 7; // سماكة الحرف (عدد النقاط بجانب بعضها)
+const pointSize = 20; 
+const spacing = 18; 
+const thickness = 7; 
 
 const drawThickPoint = (top, left) => {
   // لرسم نقطة ذات سماكة
   for (let i = 0; i < thickness; i++) {
     const div = document.createElement('div');
     div.classList.add('effect');
-    div.style.top = `${top + i * pointSize}px`; // محاذاة رأسي
-    div.style.right = `${left}px`; // محاذاة أفقي
+    div.style.top = `${top + i * pointSize}px`; 
+    div.style.right = `${left}px`; 
     container.appendChild(div);
   }
 };
 
 // رسم الجزء الرأسي (المائل قليلاً)
 for (let i = 0; i < 12; i++) {
-  drawThickPoint(i * spacing, i * 10); // زيادة في المحاذاة الأفقية لتحقيق الميل
+  drawThickPoint(i * spacing, i * 10);
 }
 
 // رسم الجزء الأفقي (أسفل العمود المائل)
 for (let i = 0; i < 10; i++) {
-  drawThickPoint(12 * spacing, i * spacing + 120); // المحاذاة لتكملة الميل في القاعدة
+  drawThickPoint(12 * spacing, i * spacing + 120);
 }
 //  /////////////
 
