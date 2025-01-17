@@ -1,0 +1,332 @@
+/* Responsive styles */
+@media (max-width: 1200px) {
+  /* Large tablets and smaller desktops */
+  .container {
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .homeContainer {
+    padding: 30px; 
+   
+  }
+    
+  .productInfo > h2 {
+    font-size: 35px; 
+    font-weight: 800;
+    color: #5b4e4e;
+   
+  }
+
+  .productInfo > p {
+    font-size: 16px; /* Adjust paragraph size */
+    width: 60%; /* Use relative width */
+  }
+
+  .productImg {
+   
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .productImg .headphonePro{
+   
+    margin:0 0 0 10px;
+    }
+
+  .productImg .productContainer {
+    width: 250px;
+    height: 250px;
+
+  }
+  .productContainer .productCard{
+    width: 180px;
+    height: 180px;
+}
+.businessTypes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        gap: 15px; /* Reduce gap */
+        margin: 80px 20px; /* Adjust margins */
+    }
+
+    .businessTypes .item1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .type h3 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .type p {
+        font-size: 14px; /* Reduce paragraph size */
+    }
+    .customerSales {
+    display: grid; /* Ensure the container is using grid layout */
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.salesTwo {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Center-align vertically */
+}
+
+.salesTwo .circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    
+    position: relative; /* Keep within parent bounds */
+    z-index: 1; /* Ensure it stays behind the card */
+}
+.salesTwo .salesCard{
+  right: 100px;
+}
+
+}
+
+@media (max-width: 860px) {
+  .salesTwo .salesCard{
+    right: 100px;
+}
+}
+
+@media (max-width: 768px) {
+  /* Tablets and smaller screens */
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .nav-bar.show {
+    display: flex;
+  }
+
+  .close-navBar {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .copy-right {
+    display: block;
+  }
+
+  .homeContainer {
+    margin: 50px auto;
+    padding: 20px; /* Reduce container padding */
+  }
+
+  .productInfo > h2 {
+    font-size: 32px;
+    color: #6b6e6e;
+  }
+
+  .productInfo > p {
+    font-size: 16px;
+    text-align: center; /* Center text */
+  }
+
+  .moreDetails {
+    font-size: 15px; /* Adjust button text size */
+  }
+.productImg{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    gap: 80px;
+}
+.productImg img{
+    max-width: 75%;
+}
+.productImg .productCard{
+    width: 180px;
+    height: 150px;
+    top: 80px;
+   padding-top: 40px;
+}
+  .productImg .productContainer {
+    width: 200px;
+    height: 200px; /* Further reduce size */
+  }
+  .headphonePro >img{
+    max-height: 70%;
+    
+   
+  }
+    .headphonePro .headphoneCard{ 
+        height: 160px;
+        padding-top: 70px;
+        top: 100px;
+        left: 60px;
+    }
+
+    .businessTypes {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px; /* Reduce gap */
+        margin: 60px 20px; /* Narrower margins */
+    }
+
+    .businessTypes .item1 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .type {
+        padding: 10px; /* Reduce padding */
+       
+    }
+
+    .type h3 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .type p {
+        font-size: 12px; /* Smaller text for readability */
+    }
+    .salesOne{
+      top: 5px;
+    }
+   .salesOne .salesCard{
+    left: 50px;
+   }
+    .salesRating .salesCard{
+      width: 350px;
+    }
+    .salesTwo .salesCard{
+      right: 50px;
+    }
+    .revenue{
+      font-size: 15px;
+    }
+    .contactUs {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 30px;
+  }
+
+  .contactForm {
+    max-width: 100%;
+  }  
+  .contactImage{
+    display:none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Phones */
+  
+  .productInfo > h2 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .productInfo > p {
+    font-size: 12px; /* Smaller paragraph */
+    width: 90%; /* Narrow width */
+  }
+  .productImg{
+    margin-top: 20px;
+    gap: 80px;
+   margin-bottom: 30px; 
+  }
+  .productImg .productContainer {
+    width: 180px;
+    height: 180px; /* Compact product images */
+  }
+
+  .productDetails .price {
+    font-size: 14px; /* Smaller font for price */
+  }
+
+  .moreDetails {
+    min-width: 180px; /* Compact button */
+  }
+
+  .moreDetails span {
+    font-size: 12px;
+  }
+
+  .businessTypes {
+        margin: 40px 5px; /* Reduce margins */
+        gap: 10px; /* Narrow gap */
+    }
+
+    .businessTypes .item1 {
+        font-size: 18px; 
+    }
+
+    .type {
+        padding: 8px; 
+    }
+
+    .type h3 {
+        font-size: 16px;
+    }
+
+    .type p {
+        font-size: 12px; 
+    }
+    
+   
+     .salesRating .salesCard{
+      max-width: 290px;
+      max-height: 200px;
+    }
+  .salesTwo .salesCard {
+        width: 90%; 
+        right: 15%; 
+        top: 40px; 
+        transform: none; 
+        margin: 0 auto;
+    }
+
+    .contactUs {
+    padding: 15px;
+  }
+
+  .contactForm {
+    padding: 20px;
+    max-width: 450px;
+  }
+
+  .contactImage img {
+    border-radius: 10px; /* Reduce radius for smaller images */
+  }
+}
+
+@media (max-width: 375px) {
+  /* Small phones */
+  .productInfo > h2 {
+    font-size: 20px; /* Further reduce heading size */
+  }
+
+  .productImg .productContainer {
+    width: 150px;
+    height: 150px; /* Further reduce product image size */
+  }
+
+  .moreDetails {
+    font-size: 12px;
+    min-width: 150px; /* Compact button size */
+  }
+
+  .homeContainer {
+    margin: 20px auto; /* Narrower margins */
+  }
+}
